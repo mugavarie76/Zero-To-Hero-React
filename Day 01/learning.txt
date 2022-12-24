@@ -1,0 +1,35 @@
+crossorigin
+
+It tells the browser to execute the scripts (external) without sending the user credentials.
+
+React Vs ReactDOM
+
+React is the JavaScript library used to create user interfaces.
+ReactDOM is the JavaScript library that allows react to interact with the DOM.
+
+The react package holds the react source for components, state, props and all the code that is react.
+
+The react-dom package as the name implies is the glue between React and the DOM.
+
+react.development.js Vs react.production.js
+
+react.development.js used for the development purpose and the codes are unminified and not optimized.
+react.production.js is the production ready js and the codes are minified and optimized and not suitable for development.
+
+Async Vs Defer
+
+Normal Scenario
+
+HTML parsing will get stop when the script loads from the network and completes the execution of the script. Once this is done the HTML parsing will resume and complete.
+
+async
+
+In async, along with HTML parsing the loading of script will happen asynchronously once the loading of the script completed the HTML parsing stops the parsing and waits till the script execution is completed. Once this is done the HTML parsing will resume and complete.
+
+Specifies that the script is downloaded in parallel to parsing the page, and executed as soon as it is available (before parsing completes) (only for external scripts)
+
+defer
+
+In defer, along with HTML parsing the loading of script will happen asynchronously and completes the loading. Once the HTML parsing is completed then the script will start execute.
+
+Specifies that the script is downloaded in parallel to parsing the page, and executed after the page has finished parsing (only for external scripts)
